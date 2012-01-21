@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ashtonharris</title>
-  <%= stylesheet_link_tag    "application" %>
+  <title>Ashton Harris</title>
+  <!-- <%= stylesheet_link_tag :all %> -->
+  <%= stylesheet_link_tag 'screen.css', :media => 'screen, projection' %>
+  <%= stylesheet_link_tag 'print.css', :media => 'print' %>
+  <!--[if IE]><%= stylesheet_link_tag 'ie.css', :media => 'screen, projection' %><![endif]-->
+  <%= stylesheet_link_tag 'flexslider.css', :media => 'screen, projection' %>
+  
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+            animation: "slide",
+            controlsContainer: ".flex-container"
+      });
+    });
+  </script>
 </head>
 <body>
+  <header>
+     <div class="contentWrap">
+       <div id="logo">
+         <a href="index.php">
+           <img src="images/logo_icon.png" width="88" height="88" alt="Logo Icon">
+           <h1>ashton<span class="darker">harris</span></h1>
+           <h2>Web Designer/Front-end Developer</h2>
+         </a>
+       </div> <!-- End logo -->
+       <nav>
+        <ul id="nav">
+          <li>
+            <a class="work" href="/">work</a>
+          </li>
+          <li>
+            <a class="about" href="about">about</a>
+          </li>
+          <li>
+            <a class="contact" href="contact">contact</a>
+          </li>
+        </ul> 
+        </nav>
+     </div> <!-- End contentWrap -->
+   </header>
 
 <%= yield %>
 
+<footer>
+  <div class="contentWrap">
+    <hr/>
+    <hr/>
+    <div class="socialMedia">
+      <ul class="mediaList">
+        <li>
+          <a class="facebook" href="http://www.facebook.com/ahdesigns" target="_blank">
+            <img src="images/fb_icon.png" width="20" height="20" alt="Fb Icon">
+          </a>
+        </li>
+        <li>
+          <a class="twitter" href="https://twitter.com/AHDezigns" target="_blank">
+            <img src="images/twitter_icon.png" width="20" height="20" alt="Twitter Icon">
+          </a>
+        </li>
+        <li>
+          <a class="linkedin" href="http://www.linkedin.com/in/ashtonharris" target="_blank">
+            <img src="images/linkedin_icon.png" width="20" height="20" alt="Linkedin Icon">
+          </a>
+        </li>
+      </ul>
+    </div> <!-- End socialMedia -->
+    <div class="contactInfo">
+      <a href="mailto:ashtonharris.me@gmail.com">ashtonharris.me@gmail.com</a><br/>
+      <a href="tel:6103348786">610 334 8786</a>
+    </div><!-- End contactInfo -->
+  </div><!-- End contentWrap -->  
+</footer>
 </body>
 </html>
