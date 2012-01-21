@@ -23,7 +23,7 @@
   <header>
      <div class="contentWrap">
        <div id="logo">
-         <a href="index.php">
+         <a href="/">
            <img src="images/logo_icon.png" width="88" height="88" alt="Logo Icon">
            <h1>ashton<span class="darker">harris</span></h1>
            <h2>Web Designer/Front-end Developer</h2>
@@ -31,15 +31,19 @@
        </div> <!-- End logo -->
        <nav>
         <ul id="nav">
-          <li>
-            <a class="work" href="/">work</a>
-          </li>
-          <li>
-            <a class="about" href="about">about</a>
-          </li>
-          <li>
-            <a class="contact" href="contact">contact</a>
-          </li>
+          <%= link_to_with_current_class "Work", home_path %>
+          <%= link_to_with_current_class "About", about_path %>
+          <%= link_to_with_current_class "Contact", contact_path %>
+          <%= link_to "Work", home_path, :class => 'work' %>
+          <!-- <li>
+                      <a class="work" href="/">work</a>
+                    </li>
+                    <li>
+                      <a class="about" href="about">about</a>
+                    </li>
+                    <li>
+                      <a class="contact" href="contact">contact</a>
+                    </li> -->
         </ul> 
         </nav>
      </div> <!-- End contentWrap -->
