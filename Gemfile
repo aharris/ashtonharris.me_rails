@@ -23,6 +23,8 @@ gem 'jquery-rails'
 
 gem "compass", ">= 0.11.7"
 
+gem 'contact_us', '~> 0.1.3'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
