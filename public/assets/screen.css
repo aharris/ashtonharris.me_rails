@@ -1,0 +1,574 @@
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Magra:400,700);
+/* line 14, ../../app/stylesheets/screen.sass */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #141720;
+  background: #f5f7f6;
+}
+
+/* line 19, ../../app/stylesheets/screen.sass */
+h1, h2, h3 {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 22, ../../app/stylesheets/screen.sass */
+h3 {
+  color: #141720;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+h3 {
+  *display: inline;
+}
+
+/* line 28, ../../app/stylesheets/screen.sass */
+.comments {
+  font-size: 2em;
+  color: #84878b;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  margin-bottom: 20px;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.comments {
+  *display: inline;
+}
+
+/* line 35, ../../app/stylesheets/screen.sass */
+p {
+  line-height: 1.5em;
+}
+
+/* line 38, ../../app/stylesheets/screen.sass */
+strong {
+  font-weight: bold;
+}
+
+/* line 41, ../../app/stylesheets/screen.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 43, ../../app/stylesheets/screen.sass */
+hr {
+  color: #6e7176;
+}
+
+/* line 47, ../../app/stylesheets/screen.sass */
+.button {
+  text-align: center;
+  padding: 10px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  border-radius: 7px;
+  -moz-box-shadow: inset 0 0 3px 0 #cccccc;
+  -webkit-box-shadow: inset 0 0 3px 0 #cccccc;
+  -o-box-shadow: inset 0 0 3px 0 #cccccc;
+  box-shadow: inset 0 0 3px 0 #cccccc;
+  margin: 10px auto 30px;
+  width: 80%;
+  background: white;
+}
+/* line 55, ../../app/stylesheets/screen.sass */
+.button a {
+  background: #00aeba;
+  color: white;
+  padding: 10px 0;
+  margin: 0 auto;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 1px 1px 1px 1px #cccccc;
+  -webkit-box-shadow: 1px 1px 1px 1px #cccccc;
+  -o-box-shadow: 1px 1px 1px 1px #cccccc;
+  box-shadow: 1px 1px 1px 1px #cccccc;
+  font-weight: 400;
+  text-shadow: -1px -1px 1px #005a60, 1px 1px 1px #58cad2;
+  display: block;
+  width: 95%;
+}
+/* line 66, ../../app/stylesheets/screen.sass */
+.button a:hover, .button a:active, .button #nav li.current a, #nav li.current .button a {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 70, ../../app/stylesheets/screen.sass */
+.contentWrap:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 78, ../../app/stylesheets/screen.sass */
+.contentWrap {
+  margin: 0 auto 20px;
+  width: 90%;
+  max-width: 1140px;
+  padding: 20px 2%;
+}
+
+/* line 85, ../../app/stylesheets/screen.sass */
+a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+/* line 90, ../../app/stylesheets/screen.sass */
+header {
+  background: #141720;
+}
+/* line 92, ../../app/stylesheets/screen.sass */
+header #logo {
+  float: left;
+  width: 50%;
+}
+/* line 95, ../../app/stylesheets/screen.sass */
+header #logo img {
+  float: left;
+  margin-right: 10px;
+}
+/* line 98, ../../app/stylesheets/screen.sass */
+header #logo h1 {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 16px;
+}
+/* line 103, ../../app/stylesheets/screen.sass */
+header #logo h1 .darker {
+  color: #9b9da0;
+}
+/* line 105, ../../app/stylesheets/screen.sass */
+header #logo h2 {
+  color: white;
+  font-size: 1em;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+/* line 112, ../../app/stylesheets/screen.sass */
+#nav {
+  float: right;
+}
+/* line 114, ../../app/stylesheets/screen.sass */
+#nav li {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  font-size: 1.4em;
+  margin: 15px;
+  padding-top: 10px;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+#nav li {
+  *display: inline;
+}
+/* line 119, ../../app/stylesheets/screen.sass */
+#nav li a {
+  color: white;
+  text-decoration: none;
+  padding-top: 15px;
+}
+/* line 123, ../../app/stylesheets/screen.sass */
+#nav li a:active, #nav li.current a, #nav li a:hover {
+  color: #30b51f;
+}
+/* line 128, ../../app/stylesheets/screen.sass */
+#nav li.current a.work {
+  background: url("../../images/work_icon.png") no-repeat scroll 50% 0%;
+  width: 22px;
+  height: 20px;
+}
+/* line 132, ../../app/stylesheets/screen.sass */
+#nav li.current a.about {
+  background: url("../../images/resume_icon.png") no-repeat scroll 50% 0%;
+  width: 22px;
+  height: 20px;
+}
+/* line 136, ../../app/stylesheets/screen.sass */
+#nav li.current a.contact {
+  background: url("../../images/contact_icon.png") no-repeat scroll 50% 0%;
+  width: 22px;
+  height: 20px;
+}
+
+/* line 141, ../../app/stylesheets/screen.sass */
+#nav li.current a.work {
+  background: url("../../images/work_icon.png") no-repeat scroll 50% 0%;
+  width: 22px;
+  height: 20px;
+}
+
+/* line 147, ../../app/stylesheets/screen.sass */
+.flexWrapper, .indent {
+  background: white;
+  -moz-box-shadow: inset 0 0 5px 0 #cccccc;
+  -webkit-box-shadow: inset 0 0 5px 0 #cccccc;
+  -o-box-shadow: inset 0 0 5px 0 #cccccc;
+  box-shadow: inset 0 0 5px 0 #cccccc;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  padding: 30px 3%;
+}
+/* line 152, ../../app/stylesheets/screen.sass */
+.flexWrapper .flex-container, .indent .flex-container {
+  background: #f5f7f6;
+  -moz-box-shadow: 1px 1px 3px 1px #cccccc;
+  -webkit-box-shadow: 1px 1px 3px 1px #cccccc;
+  -o-box-shadow: 1px 1px 3px 1px #cccccc;
+  box-shadow: 1px 1px 3px 1px #cccccc;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+/* line 159, ../../app/stylesheets/screen.sass */
+.featuredWork {
+  text-align: center;
+}
+/* line 161, ../../app/stylesheets/screen.sass */
+.featuredWork li {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  width: 22%;
+  margin: 1%;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.featuredWork li {
+  *display: inline;
+}
+/* line 166, ../../app/stylesheets/screen.sass */
+.featuredWork li a {
+  display: block;
+  background: #141720;
+  height: 100%;
+  text-indent: -1000000px;
+  background-size: 90% auto;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 173, ../../app/stylesheets/screen.sass */
+.featuredWork li a.featured_1 {
+  background: #141720 url("../../images/featured/movitas_logo.png") no-repeat scroll 50% 50%;
+}
+/* line 175, ../../app/stylesheets/screen.sass */
+.featuredWork li a.featured_1:active, .featuredWork #nav li.current a.featured_1, #nav .featuredWork li.current a.featured_1, .featuredWork li a.featured_1:hover {
+  background: #141720 url("../../images/featured/movitas_img.png") no-repeat scroll 50% 50%;
+}
+/* line 177, ../../app/stylesheets/screen.sass */
+.featuredWork li a.featured_2 {
+  background: #141720 url("../../images/featured/traveler_connect_logo.png") no-repeat scroll 50% 50%;
+}
+/* line 179, ../../app/stylesheets/screen.sass */
+.featuredWork li a.featured_2:active, .featuredWork #nav li.current a.featured_2, #nav .featuredWork li.current a.featured_2, .featuredWork li a.featured_2:hover {
+  background: #141720 url("../../images/featured/traveler_connect_img.png") no-repeat scroll 50% 50%;
+}
+/* line 181, ../../app/stylesheets/screen.sass */
+.featuredWork li a.featured_3 {
+  background: #141720 url("../../images/featured/avaya_logo.png") no-repeat scroll 50% 50%;
+}
+/* line 183, ../../app/stylesheets/screen.sass */
+.featuredWork li a.featured_3:active, .featuredWork #nav li.current a.featured_3, #nav .featuredWork li.current a.featured_3, .featuredWork li a.featured_3:hover {
+  background: #141720 url("../../images/featured/avaya_img.png") no-repeat scroll 50% 50%;
+}
+/* line 185, ../../app/stylesheets/screen.sass */
+.featuredWork li a.featured_4 {
+  background: #141720 url("../../images/featured/media_giraffes_logo.png") no-repeat scroll 50% 50%;
+}
+/* line 187, ../../app/stylesheets/screen.sass */
+.featuredWork li a.featured_4:active, .featuredWork #nav li.current a.featured_4, #nav .featuredWork li.current a.featured_4, .featuredWork li a.featured_4:hover {
+  background: #141720 url("../../images/featured/media_giraffes_img.png") no-repeat scroll 50% 50%;
+}
+
+/* line 191, ../../app/stylesheets/screen.sass */
+.indent {
+  width: 60%;
+  float: left;
+  margin-right: 4%;
+  margin-bottom: 20px;
+}
+/* line 197, ../../app/stylesheets/screen.sass */
+.indent .content {
+  background: #f5f7f6;
+  -moz-box-shadow: 1px 1px 3px 1px #cccccc;
+  -webkit-box-shadow: 1px 1px 3px 1px #cccccc;
+  -o-box-shadow: 1px 1px 3px 1px #cccccc;
+  box-shadow: 1px 1px 3px 1px #cccccc;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+/* line 203, ../../app/stylesheets/screen.sass */
+.sidebar {
+  float: left;
+  width: 30%;
+}
+
+/* line 208, ../../app/stylesheets/screen.sass */
+.resume img {
+  border: 4px solid white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 212, ../../app/stylesheets/screen.sass */
+img.aboutMeImg {
+  float: left;
+  margin-right: 1em;
+  border: 4px solid white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 219, ../../app/stylesheets/screen.sass */
+.clientList li {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  margin: 1%;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.clientList li {
+  *display: inline;
+}
+/* line 222, ../../app/stylesheets/screen.sass */
+.clientList li a {
+  color: white;
+  display: block;
+  padding: 5px;
+  background: #cccccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 228, ../../app/stylesheets/screen.sass */
+.clientList li a:hover, .clientList li a:active, .clientList #nav li.current a, #nav .clientList li.current a {
+  background: #aaaaaa;
+}
+
+/* line 233, ../../app/stylesheets/screen.sass */
+.contactInfo {
+  float: left;
+  width: 40%;
+  text-align: right;
+  margin: 0 5%;
+}
+/* line 238, ../../app/stylesheets/screen.sass */
+.contactInfo a {
+  color: #525252;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 243, ../../app/stylesheets/screen.sass */
+.mediaList {
+  float: right;
+  width: 40%;
+  text-align: left;
+  margin: 0 5%;
+}
+/* line 248, ../../app/stylesheets/screen.sass */
+.mediaList li {
+  display: inline;
+  margin: 5px;
+}
+/* line 251, ../../app/stylesheets/screen.sass */
+.mediaList li a {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  background: #9b9da0;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -o-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -khtml-border-radius: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.mediaList li a {
+  *display: inline;
+}
+/* line 257, ../../app/stylesheets/screen.sass */
+.mediaList li a.facebook:hover, .mediaList li a.facebook:active, .mediaList #nav li.current a.facebook, #nav .mediaList li.current a.facebook {
+  background: #39599f;
+}
+/* line 260, ../../app/stylesheets/screen.sass */
+.mediaList li a.twitter:hover, .mediaList li a.twitter:active, .mediaList #nav li.current a.twitter, #nav .mediaList li.current a.twitter {
+  background: #45b0e3;
+}
+/* line 263, ../../app/stylesheets/screen.sass */
+.mediaList li a.linkedin:hover, .mediaList li a.linkedin:active, .mediaList #nav li.current a.linkedin, #nav .mediaList li.current a.linkedin {
+  background: #82c6da;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 268, ../../app/stylesheets/screen.sass */
+  header .contentWrap {
+    padding-bottom: 0;
+  }
+  /* line 270, ../../app/stylesheets/screen.sass */
+  header #logo {
+    width: 100%;
+  }
+
+  /* line 272, ../../app/stylesheets/screen.sass */
+  #nav {
+    float: left;
+  }
+
+  /* line 274, ../../app/stylesheets/screen.sass */
+  .flexWrapper, .indent, .indent {
+    padding: 15px 3%;
+  }
+
+  /* line 276, ../../app/stylesheets/screen.sass */
+  .indent {
+    width: 90%;
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  /* line 280, ../../app/stylesheets/screen.sass */
+  .sidebar {
+    width: 90%;
+    float: none;
+    margin: 0 auto 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 286, ../../app/stylesheets/screen.sass */
+  .contactInfo, .mediaList {
+    width: 90%;
+    text-align: center;
+    margin: 10px auto;
+    float: none;
+  }
+}
