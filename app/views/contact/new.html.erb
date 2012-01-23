@@ -2,20 +2,16 @@
   <div class="indent">
     <div class="content">
 <%= form_for @contact, :url => { :action => "create" }, :html => { :method => :post } do |f| %>
-  <%= f.label :name, "Your name" %>
+  <%= f.label :name, "Name" %>
   <%= f.text_field :name %>
   <br />
   <%= f.label :email, "Email"%>
   <%= f.text_field :email %>
   <br />
   <%= f.label :subject, "Subject"%>
-  <%= f.select :subject, options_for_select([
-    ["General feedback",  "Feedback"],
-    ["Suggest a feature", "Feature request"],
-    ["Report a bug",      "Bug report"]
-  ]) %>
+  <%= f.text_field :subject %>
   <br />
-  <%= f.label :body, "Your comments" %>
+  <%= f.label :body, "Message" %>
   <%= f.text_area :body %>
   <hr />
   <p>Are you human?</p>

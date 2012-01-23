@@ -1,11 +1,6 @@
 class PagesController < ApplicationController
   def home
-  end
-
-  def about
-  end
-
-  def contact
+    flash[:notice] = "thanks"
   end
 
 end
