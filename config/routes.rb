@@ -1,7 +1,8 @@
 Ashtonharris::Application.routes.draw do
   root :to => 'pages#home', :as => 'home'
    get 'about' => 'pages#about' 
-   get 'contact' => 'pages#contact'
+   get  "contact", :to => "contact#new", :as => "contact"
+   post "contact", :to => "contact#create"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
