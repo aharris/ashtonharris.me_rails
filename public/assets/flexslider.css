@@ -52,6 +52,20 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .flex-direction-nav li .prev {left: -17px;}
 .flex-direction-nav li .disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
 
+@media only screen and (max-width: 480px){
+  .flex-direction-nav li .next{
+    background-position: -26px 0;
+    right: -17px;
+  }
+  .flex-direction-nav li a{
+    width: 26px;
+    height: 26px;
+    margin: -13px 9px 0;
+    background: url(../images/bg_direction_nav_small.png) no-repeat 0 0;
+    top: 50;
+  }
+}
+
 /* Control Nav */
 .flex-control-nav {width: 90%; position: absolute; bottom: 3%; text-align: center;}
 .flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
@@ -59,3 +73,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .flex-control-nav li a {width: 19px; height: 19px; display: block; background: url(../images/bg_control_nav2.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px;}
 .flex-control-nav li a:hover {background-position: 0 -20px;}
 .flex-control-nav li a.active {background-position: 0 -40px; cursor: default;}
+
+@media only screen and (max-width: 480px){
+  /* Control Nav */
+  .flex-control-nav li a {width: 13px; height: 13px; display: block; background: url(/images/bg_control_nav.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px;}
+  .flex-control-nav li a:hover {background-position: 0 -13px;}
+  .flex-control-nav li a.active {background-position: 0 -27px; cursor: default;} 
+}
