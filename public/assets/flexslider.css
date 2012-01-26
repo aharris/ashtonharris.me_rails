@@ -60,8 +60,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   .flex-direction-nav li a{
     width: 26px;
     height: 26px;
-    margin: -13px 9px 0;
-    background: url(../images/bg_direction_nav_small.png) no-repeat 0 0;
+    margin: -9px 9px 0;
+    background-size: 200%;
     top: 50;
   }
 }
@@ -76,7 +76,12 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 @media only screen and (max-width: 480px){
   /* Control Nav */
-  .flex-control-nav li a {width: 13px; height: 13px; display: block; background: url(/images/bg_control_nav.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px;}
+  .flex-control-nav li a {
+    width: 13px; 
+    height: 13px; 
+    display: block;
+    background-size: 100%;
+  }
   .flex-control-nav li a:hover {background-position: 0 -13px;}
   .flex-control-nav li a.active {background-position: 0 -27px; cursor: default;} 
 }
