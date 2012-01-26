@@ -548,7 +548,7 @@ img.aboutMeImg {
   }
 
   /* line 277, ../../app/stylesheets/screen.sass */
-  .flexWrapper, .indent, .indent {
+  .flexWrapper, .indent {
     padding: 15px 3%;
   }
 
@@ -574,9 +574,14 @@ img.aboutMeImg {
     margin: 10px auto;
     float: none;
   }
+
+  /* line 294, ../../app/stylesheets/screen.sass */
+  .flexWrapper, .indent, .indent {
+    padding: 10px 3%;
+  }
 }
 @media only screen and (max-width : 320px) {
-  /* line 298, ../../app/stylesheets/screen.sass */
+  /* line 300, ../../app/stylesheets/screen.sass */
   header #logo h1 {
     margin-top: 0;
   }
