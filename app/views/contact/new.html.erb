@@ -2,24 +2,30 @@
   <div class="indent">
     <div class="content">
       <%= form_for @contact, :url => { :action => "create" }, :html => { :method => :post } do |f| %>
-        <%= f.label :name, "Name" %>
-        <%= f.text_field :name %>
+
+        <%= f.text_field :name, :placeholder => "Name" %>
         <br />
-        <%= f.label :email, "Email"%>
-        <%= f.text_field :email %>
+
+        <%= f.text_field :email, :placeholder => "Email" %>
         <br />
-        <%= f.label :subject, "Subject"%>
-        <%= f.text_field :subject %>
+
+        <%= f.text_field :subject, :placeholder => "Subject" %>
         <br />
-        <%= f.label :body, "Message" %>
-        <%= f.text_area :body %>
-        <hr />
-        <p>Are you human?</p>
+        
+        <%= f.text_area :body, :placeholder => "Message" %>
+        <p class="humanTest">Are you human?
         <%= f.label :verify, "3 + 1 =" %>
-        <%= f.text_field :verify %>
+        <%= f.text_field :verify %></p>
         <br />
+        <div class="submitBtn">
         <%= f.submit "Submit" %>
+        </div>
       <% end %>
     </div>
+  </div>
+   <div class="sidebar">
+      <div class="comments">//</div><h3>Contact Me</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nibh sed massa sagittis ultricies ullamcorper id nulla. Cras a nibh risus. Nullam venenatis nunc nec purus pulvinar sed aliquam quam dignissim. Proin vel volutpat purus. Phasellus lobortis neque luctus dolor cursus ac interdum orci scelerisque. Mauris blandit, mauris id sagittis fringilla, risus enim imperdiet lacus, nec pretium lorem lectus id purus. Duis interdum orci a dui pellentesque ac suscipit turpis laoreet. Aliquam erat volutpat. Donec mattis gravida congue. Quisque eget rhoncus nisi. Vivamus nulla justo, iaculis et condimentum non, dapibus sit amet quam. Curabitur fermentum diam leo, vel ullamcorper arcu.</p>
+
   </div>
 </div>

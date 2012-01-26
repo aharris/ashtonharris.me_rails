@@ -231,7 +231,41 @@ img.aboutMeImg
       &:hover, &:active
         background: #aaa
       
-      
+//CONTACT
+form
+  label
+    +inline-block
+  input, textarea
+    +border-radius(10px)
+    +inline-block
+    padding: 10px 5%
+    width: 90%
+    max-width: 90%
+    border: none
+    +box-shadow(inset 0 0 3px 0 #ccc)
+    font-size: 1em
+  input
+    max-width: 300px
+  .humanTest
+    margin-top: 20px
+    text-align: center
+  .submitBtn
+    @extend .button
+    max-width: 300px
+    input
+      background: #00AEBA
+      color: #fff
+      padding: 10px 0
+      margin: 0 auto
+      +border-radius(5px)
+      +box-shadow(1px 1px 1px 1px #ccc)
+      font-weight: 400
+      text-shadow: -1px -1px 1px #005a60, 1px 1px 1px #58cad2
+      display: block
+      width: 95%
+      &:hover, &:active
+        +box-shadow( none )
+
 //FOOTER
 .contactInfo
   float: left

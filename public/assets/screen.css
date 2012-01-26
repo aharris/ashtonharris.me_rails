@@ -132,7 +132,7 @@ hr {
 }
 
 /* line 47, ../../app/stylesheets/screen.sass */
-.button {
+.button, form .submitBtn {
   text-align: center;
   padding: 10px;
   -moz-border-radius: 7px;
@@ -150,7 +150,7 @@ hr {
   background: white;
 }
 /* line 55, ../../app/stylesheets/screen.sass */
-.button a {
+.button a, form .submitBtn a {
   background: #00aeba;
   color: white;
   padding: 10px 0;
@@ -171,7 +171,7 @@ hr {
   width: 95%;
 }
 /* line 66, ../../app/stylesheets/screen.sass */
-.button a:hover, .button a:active, .button #nav li.current a, #nav li.current .button a {
+.button a:hover, form .submitBtn a:hover, .button a:active, form .submitBtn a:active, .button #nav li.current a, #nav li.current .button a, form .submitBtn #nav li.current a, #nav li.current form .submitBtn a {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
@@ -474,32 +474,113 @@ img.aboutMeImg {
 }
 
 /* line 236, ../../app/stylesheets/screen.sass */
+form label {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+form label {
+  *display: inline;
+}
+/* line 238, ../../app/stylesheets/screen.sass */
+form input, form textarea {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  padding: 10px 5%;
+  width: 90%;
+  max-width: 90%;
+  border: none;
+  -moz-box-shadow: inset 0 0 3px 0 #cccccc;
+  -webkit-box-shadow: inset 0 0 3px 0 #cccccc;
+  -o-box-shadow: inset 0 0 3px 0 #cccccc;
+  box-shadow: inset 0 0 3px 0 #cccccc;
+  font-size: 1em;
+}
+/* line 7, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+form input, form textarea {
+  *display: inline;
+}
+/* line 247, ../../app/stylesheets/screen.sass */
+form input {
+  max-width: 300px;
+}
+/* line 249, ../../app/stylesheets/screen.sass */
+form .humanTest {
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 252, ../../app/stylesheets/screen.sass */
+form .submitBtn {
+  max-width: 300px;
+}
+/* line 255, ../../app/stylesheets/screen.sass */
+form .submitBtn input {
+  background: #00aeba;
+  color: white;
+  padding: 10px 0;
+  margin: 0 auto;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 1px 1px 1px 1px #cccccc;
+  -webkit-box-shadow: 1px 1px 1px 1px #cccccc;
+  -o-box-shadow: 1px 1px 1px 1px #cccccc;
+  box-shadow: 1px 1px 1px 1px #cccccc;
+  font-weight: 400;
+  text-shadow: -1px -1px 1px #005a60, 1px 1px 1px #58cad2;
+  display: block;
+  width: 95%;
+}
+/* line 266, ../../app/stylesheets/screen.sass */
+form .submitBtn input:hover, form .submitBtn input:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 270, ../../app/stylesheets/screen.sass */
 .contactInfo {
   float: left;
   width: 40%;
   text-align: right;
   margin: 0 5%;
 }
-/* line 241, ../../app/stylesheets/screen.sass */
+/* line 275, ../../app/stylesheets/screen.sass */
 .contactInfo a {
   color: #525252;
   text-decoration: none;
   display: block;
 }
 
-/* line 246, ../../app/stylesheets/screen.sass */
+/* line 280, ../../app/stylesheets/screen.sass */
 .mediaList {
   float: right;
   width: 40%;
   text-align: left;
   margin: 0 5%;
 }
-/* line 251, ../../app/stylesheets/screen.sass */
+/* line 285, ../../app/stylesheets/screen.sass */
 .mediaList li {
   display: inline;
   margin: 5px;
 }
-/* line 254, ../../app/stylesheets/screen.sass */
+/* line 288, ../../app/stylesheets/screen.sass */
 .mediaList li a {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -519,47 +600,47 @@ img.aboutMeImg {
 .mediaList li a {
   *display: inline;
 }
-/* line 260, ../../app/stylesheets/screen.sass */
+/* line 294, ../../app/stylesheets/screen.sass */
 .mediaList li a.facebook:hover, .mediaList li a.facebook:active, .mediaList #nav li.current a.facebook, #nav .mediaList li.current a.facebook {
   background: #39599f;
 }
-/* line 263, ../../app/stylesheets/screen.sass */
+/* line 297, ../../app/stylesheets/screen.sass */
 .mediaList li a.twitter:hover, .mediaList li a.twitter:active, .mediaList #nav li.current a.twitter, #nav .mediaList li.current a.twitter {
   background: #45b0e3;
 }
-/* line 266, ../../app/stylesheets/screen.sass */
+/* line 300, ../../app/stylesheets/screen.sass */
 .mediaList li a.linkedin:hover, .mediaList li a.linkedin:active, .mediaList #nav li.current a.linkedin, #nav .mediaList li.current a.linkedin {
   background: #82c6da;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 271, ../../app/stylesheets/screen.sass */
+  /* line 305, ../../app/stylesheets/screen.sass */
   header .contentWrap {
     padding-bottom: 0;
   }
-  /* line 273, ../../app/stylesheets/screen.sass */
+  /* line 307, ../../app/stylesheets/screen.sass */
   header #logo {
     width: 100%;
   }
 
-  /* line 275, ../../app/stylesheets/screen.sass */
+  /* line 309, ../../app/stylesheets/screen.sass */
   #nav {
     float: left;
   }
 
-  /* line 277, ../../app/stylesheets/screen.sass */
+  /* line 311, ../../app/stylesheets/screen.sass */
   .flexWrapper, .indent {
     padding: 15px 3%;
   }
 
-  /* line 279, ../../app/stylesheets/screen.sass */
+  /* line 313, ../../app/stylesheets/screen.sass */
   .indent {
     width: 90%;
     float: none;
     margin: 0 auto 20px;
   }
 
-  /* line 283, ../../app/stylesheets/screen.sass */
+  /* line 317, ../../app/stylesheets/screen.sass */
   .sidebar {
     width: 90%;
     float: none;
@@ -567,7 +648,7 @@ img.aboutMeImg {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 289, ../../app/stylesheets/screen.sass */
+  /* line 323, ../../app/stylesheets/screen.sass */
   .contactInfo, .mediaList {
     width: 90%;
     text-align: center;
@@ -575,13 +656,13 @@ img.aboutMeImg {
     float: none;
   }
 
-  /* line 294, ../../app/stylesheets/screen.sass */
+  /* line 328, ../../app/stylesheets/screen.sass */
   .flexWrapper, .indent, .indent {
     padding: 10px 3%;
   }
 }
 @media only screen and (max-width : 320px) {
-  /* line 300, ../../app/stylesheets/screen.sass */
+  /* line 334, ../../app/stylesheets/screen.sass */
   header #logo h1 {
     margin-top: 0;
   }
