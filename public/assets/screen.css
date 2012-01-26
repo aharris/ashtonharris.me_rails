@@ -517,15 +517,19 @@ form input {
   max-width: 300px;
 }
 /* line 249, ../../app/stylesheets/screen.sass */
+form textarea {
+  height: 200px;
+}
+/* line 251, ../../app/stylesheets/screen.sass */
 form .humanTest {
   margin-top: 20px;
   text-align: center;
 }
-/* line 252, ../../app/stylesheets/screen.sass */
+/* line 254, ../../app/stylesheets/screen.sass */
 form .submitBtn {
   max-width: 300px;
 }
-/* line 255, ../../app/stylesheets/screen.sass */
+/* line 257, ../../app/stylesheets/screen.sass */
 form .submitBtn input {
   background: #00aeba;
   color: white;
@@ -547,7 +551,7 @@ form .submitBtn input {
   width: 95%;
   -webkit-appearance: none;
 }
-/* line 267, ../../app/stylesheets/screen.sass */
+/* line 269, ../../app/stylesheets/screen.sass */
 form .submitBtn input:hover, form .submitBtn input:active {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -555,33 +559,33 @@ form .submitBtn input:hover, form .submitBtn input:active {
   box-shadow: none;
 }
 
-/* line 271, ../../app/stylesheets/screen.sass */
+/* line 273, ../../app/stylesheets/screen.sass */
 .contactInfo {
   float: left;
   width: 40%;
   text-align: right;
   margin: 0 5%;
 }
-/* line 276, ../../app/stylesheets/screen.sass */
+/* line 278, ../../app/stylesheets/screen.sass */
 .contactInfo a {
   color: #525252;
   text-decoration: none;
   display: block;
 }
 
-/* line 281, ../../app/stylesheets/screen.sass */
+/* line 283, ../../app/stylesheets/screen.sass */
 .mediaList {
   float: right;
   width: 40%;
   text-align: left;
   margin: 0 5%;
 }
-/* line 286, ../../app/stylesheets/screen.sass */
+/* line 288, ../../app/stylesheets/screen.sass */
 .mediaList li {
   display: inline;
   margin: 5px;
 }
-/* line 289, ../../app/stylesheets/screen.sass */
+/* line 291, ../../app/stylesheets/screen.sass */
 .mediaList li a {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -601,47 +605,47 @@ form .submitBtn input:hover, form .submitBtn input:active {
 .mediaList li a {
   *display: inline;
 }
-/* line 295, ../../app/stylesheets/screen.sass */
+/* line 297, ../../app/stylesheets/screen.sass */
 .mediaList li a.facebook:hover, .mediaList li a.facebook:active, .mediaList #nav li.current a.facebook, #nav .mediaList li.current a.facebook {
   background: #39599f;
 }
-/* line 298, ../../app/stylesheets/screen.sass */
+/* line 300, ../../app/stylesheets/screen.sass */
 .mediaList li a.twitter:hover, .mediaList li a.twitter:active, .mediaList #nav li.current a.twitter, #nav .mediaList li.current a.twitter {
   background: #45b0e3;
 }
-/* line 301, ../../app/stylesheets/screen.sass */
+/* line 303, ../../app/stylesheets/screen.sass */
 .mediaList li a.linkedin:hover, .mediaList li a.linkedin:active, .mediaList #nav li.current a.linkedin, #nav .mediaList li.current a.linkedin {
   background: #82c6da;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 306, ../../app/stylesheets/screen.sass */
+  /* line 308, ../../app/stylesheets/screen.sass */
   header .contentWrap {
     padding-bottom: 0;
   }
-  /* line 308, ../../app/stylesheets/screen.sass */
+  /* line 310, ../../app/stylesheets/screen.sass */
   header #logo {
     width: 100%;
   }
 
-  /* line 310, ../../app/stylesheets/screen.sass */
+  /* line 312, ../../app/stylesheets/screen.sass */
   #nav {
     float: left;
   }
 
-  /* line 312, ../../app/stylesheets/screen.sass */
+  /* line 314, ../../app/stylesheets/screen.sass */
   .flexWrapper, .indent {
     padding: 15px 3%;
   }
 
-  /* line 314, ../../app/stylesheets/screen.sass */
+  /* line 316, ../../app/stylesheets/screen.sass */
   .indent {
     width: 90%;
     float: none;
     margin: 0 auto 20px;
   }
 
-  /* line 318, ../../app/stylesheets/screen.sass */
+  /* line 320, ../../app/stylesheets/screen.sass */
   .sidebar {
     width: 90%;
     float: none;
@@ -649,7 +653,7 @@ form .submitBtn input:hover, form .submitBtn input:active {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 324, ../../app/stylesheets/screen.sass */
+  /* line 326, ../../app/stylesheets/screen.sass */
   .contactInfo, .mediaList {
     width: 90%;
     text-align: center;
@@ -657,13 +661,13 @@ form .submitBtn input:hover, form .submitBtn input:active {
     float: none;
   }
 
-  /* line 329, ../../app/stylesheets/screen.sass */
+  /* line 331, ../../app/stylesheets/screen.sass */
   .flexWrapper, .indent, .indent {
     padding: 10px 3%;
   }
 }
 @media only screen and (max-width : 320px) {
-  /* line 335, ../../app/stylesheets/screen.sass */
+  /* line 337, ../../app/stylesheets/screen.sass */
   header #logo h1 {
     margin-top: 0;
   }
