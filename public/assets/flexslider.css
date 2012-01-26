@@ -76,6 +76,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 @media only screen and (max-width: 480px){
   /* Control Nav */
+  .flex-control-nav{
+    bottom: 0%;
+  }
   .flex-control-nav li a {
     width: 13px; 
     height: 13px; 
