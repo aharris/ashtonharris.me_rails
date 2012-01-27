@@ -114,24 +114,25 @@ h3 {
 /* line 35, ../../app/stylesheets/screen.sass */
 p {
   line-height: 1.5em;
+  margin-bottom: 1em;
 }
 
-/* line 38, ../../app/stylesheets/screen.sass */
+/* line 39, ../../app/stylesheets/screen.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 41, ../../app/stylesheets/screen.sass */
+/* line 42, ../../app/stylesheets/screen.sass */
 img {
   max-width: 100%;
 }
 
-/* line 43, ../../app/stylesheets/screen.sass */
+/* line 44, ../../app/stylesheets/screen.sass */
 hr {
   color: #6e7176;
 }
 
-/* line 47, ../../app/stylesheets/screen.sass */
+/* line 48, ../../app/stylesheets/screen.sass */
 .button, form .submitBtn {
   text-align: center;
   padding: 10px;
@@ -149,7 +150,7 @@ hr {
   width: 80%;
   background: white;
 }
-/* line 55, ../../app/stylesheets/screen.sass */
+/* line 56, ../../app/stylesheets/screen.sass */
 .button a, form .submitBtn a {
   background: #00aeba;
   color: white;
@@ -170,15 +171,16 @@ hr {
   display: block;
   width: 95%;
 }
-/* line 66, ../../app/stylesheets/screen.sass */
+/* line 67, ../../app/stylesheets/screen.sass */
 .button a:hover, form .submitBtn a:hover, .button a:active, form .submitBtn a:active, .button #nav li.current a, #nav li.current .button a, form .submitBtn #nav li.current a, #nav li.current form .submitBtn a {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
+  color: white;
 }
 
-/* line 70, ../../app/stylesheets/screen.sass */
+/* line 72, ../../app/stylesheets/screen.sass */
 .contentWrap:after {
   content: "\0020";
   display: block;
@@ -188,7 +190,7 @@ hr {
   visibility: hidden;
 }
 
-/* line 78, ../../app/stylesheets/screen.sass */
+/* line 80, ../../app/stylesheets/screen.sass */
 .contentWrap {
   margin: 0 auto 20px;
   width: 90%;
@@ -196,40 +198,45 @@ hr {
   padding: 20px 2%;
 }
 
-/* line 85, ../../app/stylesheets/screen.sass */
+/* line 87, ../../app/stylesheets/screen.sass */
 a {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
+  color: #00aeba;
+}
+/* line 91, ../../app/stylesheets/screen.sass */
+a:hover, a:active, #nav li.current a {
+  color: #30b51f;
 }
 
-/* line 90, ../../app/stylesheets/screen.sass */
+/* line 95, ../../app/stylesheets/screen.sass */
 header {
   background: #141720;
 }
-/* line 92, ../../app/stylesheets/screen.sass */
+/* line 97, ../../app/stylesheets/screen.sass */
 header #logo {
   float: left;
   width: 50%;
 }
-/* line 95, ../../app/stylesheets/screen.sass */
+/* line 100, ../../app/stylesheets/screen.sass */
 header #logo img {
   float: left;
   margin-right: 10px;
   max-width: 25%;
   height: auto;
 }
-/* line 100, ../../app/stylesheets/screen.sass */
+/* line 105, ../../app/stylesheets/screen.sass */
 header #logo h1 {
   color: white;
   font-size: 2em;
   font-weight: 700;
   margin-top: 16px;
 }
-/* line 105, ../../app/stylesheets/screen.sass */
+/* line 110, ../../app/stylesheets/screen.sass */
 header #logo h1 .darker {
   color: #9b9da0;
 }
-/* line 107, ../../app/stylesheets/screen.sass */
+/* line 112, ../../app/stylesheets/screen.sass */
 header #logo h2 {
   color: white;
   font-size: 1em;
@@ -237,11 +244,11 @@ header #logo h2 {
   text-transform: uppercase;
 }
 
-/* line 114, ../../app/stylesheets/screen.sass */
+/* line 119, ../../app/stylesheets/screen.sass */
 #nav {
   float: right;
 }
-/* line 116, ../../app/stylesheets/screen.sass */
+/* line 121, ../../app/stylesheets/screen.sass */
 #nav li {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -256,43 +263,43 @@ header #logo h2 {
 #nav li {
   *display: inline;
 }
-/* line 121, ../../app/stylesheets/screen.sass */
+/* line 126, ../../app/stylesheets/screen.sass */
 #nav li a {
   color: white;
   text-decoration: none;
   padding-top: 15px;
 }
-/* line 125, ../../app/stylesheets/screen.sass */
+/* line 130, ../../app/stylesheets/screen.sass */
 #nav li a:active, #nav li.current a, #nav li a:hover {
   color: #30b51f;
 }
-/* line 130, ../../app/stylesheets/screen.sass */
+/* line 135, ../../app/stylesheets/screen.sass */
 #nav li.current a.work {
   background: url("../../images/work_icon.png") no-repeat scroll 50% 0%;
   width: 22px;
   height: 20px;
 }
-/* line 134, ../../app/stylesheets/screen.sass */
+/* line 139, ../../app/stylesheets/screen.sass */
 #nav li.current a.about {
   background: url("../../images/resume_icon.png") no-repeat scroll 50% 0%;
   width: 22px;
   height: 20px;
 }
-/* line 138, ../../app/stylesheets/screen.sass */
+/* line 143, ../../app/stylesheets/screen.sass */
 #nav li.current a.contact {
   background: url("../../images/contact_icon.png") no-repeat scroll 50% 0%;
   width: 22px;
   height: 20px;
 }
 
-/* line 143, ../../app/stylesheets/screen.sass */
+/* line 148, ../../app/stylesheets/screen.sass */
 #nav li.current a.work {
   background: url("../../images/work_icon.png") no-repeat scroll 50% 0%;
   width: 22px;
   height: 20px;
 }
 
-/* line 149, ../../app/stylesheets/screen.sass */
+/* line 154, ../../app/stylesheets/screen.sass */
 .flexWrapper, .indent {
   background: white;
   -moz-box-shadow: inset 0 0 5px 0 #cccccc;
@@ -307,7 +314,7 @@ header #logo h2 {
   border-radius: 10px;
   padding: 30px 3%;
 }
-/* line 154, ../../app/stylesheets/screen.sass */
+/* line 159, ../../app/stylesheets/screen.sass */
 .flexWrapper .flex-container, .indent .flex-container {
   background: #f5f7f6;
   -moz-box-shadow: 1px 1px 3px 1px #cccccc;
@@ -323,7 +330,7 @@ header #logo h2 {
   padding: 5%;
 }
 
-/* line 160, ../../app/stylesheets/screen.sass */
+/* line 165, ../../app/stylesheets/screen.sass */
 .flexslider {
   -moz-box-shadow: 0 0 0 4px white;
   -webkit-box-shadow: 0 0 0 4px white;
@@ -331,11 +338,11 @@ header #logo h2 {
   box-shadow: 0 0 0 4px white;
 }
 
-/* line 164, ../../app/stylesheets/screen.sass */
+/* line 169, ../../app/stylesheets/screen.sass */
 .featuredWork {
   text-align: center;
 }
-/* line 166, ../../app/stylesheets/screen.sass */
+/* line 171, ../../app/stylesheets/screen.sass */
 .featuredWork li {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -350,7 +357,7 @@ header #logo h2 {
 .featuredWork li {
   *display: inline;
 }
-/* line 172, ../../app/stylesheets/screen.sass */
+/* line 177, ../../app/stylesheets/screen.sass */
 .featuredWork li a {
   display: block;
   background: #141720;
@@ -364,47 +371,47 @@ header #logo h2 {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 179, ../../app/stylesheets/screen.sass */
+/* line 184, ../../app/stylesheets/screen.sass */
 .featuredWork li a.featured_1 {
   background: #141720 url("../../images/featured/movitas_logo.png") no-repeat scroll 50% 50%;
 }
-/* line 181, ../../app/stylesheets/screen.sass */
+/* line 186, ../../app/stylesheets/screen.sass */
 .featuredWork li a.featured_1:active, .featuredWork #nav li.current a.featured_1, #nav .featuredWork li.current a.featured_1, .featuredWork li a.featured_1:hover {
   background: #141720 url("../../images/featured/movitas_img.png") no-repeat scroll 50% 50%;
 }
-/* line 183, ../../app/stylesheets/screen.sass */
+/* line 188, ../../app/stylesheets/screen.sass */
 .featuredWork li a.featured_2 {
   background: #141720 url("../../images/featured/traveler_connect_logo.png") no-repeat scroll 50% 50%;
 }
-/* line 185, ../../app/stylesheets/screen.sass */
+/* line 190, ../../app/stylesheets/screen.sass */
 .featuredWork li a.featured_2:active, .featuredWork #nav li.current a.featured_2, #nav .featuredWork li.current a.featured_2, .featuredWork li a.featured_2:hover {
   background: #141720 url("../../images/featured/traveler_connect_img.png") no-repeat scroll 50% 50%;
 }
-/* line 187, ../../app/stylesheets/screen.sass */
+/* line 192, ../../app/stylesheets/screen.sass */
 .featuredWork li a.featured_3 {
   background: #141720 url("../../images/featured/avaya_logo.png") no-repeat scroll 50% 50%;
 }
-/* line 189, ../../app/stylesheets/screen.sass */
+/* line 194, ../../app/stylesheets/screen.sass */
 .featuredWork li a.featured_3:active, .featuredWork #nav li.current a.featured_3, #nav .featuredWork li.current a.featured_3, .featuredWork li a.featured_3:hover {
   background: #141720 url("../../images/featured/avaya_img.png") no-repeat scroll 50% 50%;
 }
-/* line 191, ../../app/stylesheets/screen.sass */
+/* line 196, ../../app/stylesheets/screen.sass */
 .featuredWork li a.featured_4 {
   background: #141720 url("../../images/featured/media_giraffes_logo.png") no-repeat scroll 50% 50%;
 }
-/* line 193, ../../app/stylesheets/screen.sass */
+/* line 198, ../../app/stylesheets/screen.sass */
 .featuredWork li a.featured_4:active, .featuredWork #nav li.current a.featured_4, #nav .featuredWork li.current a.featured_4, .featuredWork li a.featured_4:hover {
   background: #141720 url("../../images/featured/media_giraffes_img.png") no-repeat scroll 50% 50%;
 }
 
-/* line 197, ../../app/stylesheets/screen.sass */
+/* line 202, ../../app/stylesheets/screen.sass */
 .indent {
   width: 60%;
   float: left;
   margin-right: 4%;
   margin-bottom: 20px;
 }
-/* line 203, ../../app/stylesheets/screen.sass */
+/* line 208, ../../app/stylesheets/screen.sass */
 .indent .content {
   background: #f5f7f6;
   -moz-box-shadow: 1px 1px 3px 1px #cccccc;
@@ -420,13 +427,13 @@ header #logo h2 {
   padding: 5%;
 }
 
-/* line 209, ../../app/stylesheets/screen.sass */
+/* line 214, ../../app/stylesheets/screen.sass */
 .sidebar {
   float: left;
   width: 30%;
 }
 
-/* line 214, ../../app/stylesheets/screen.sass */
+/* line 219, ../../app/stylesheets/screen.sass */
 .resume img {
   -moz-box-shadow: 0 0 0 4px white;
   -webkit-box-shadow: 0 0 0 4px white;
@@ -440,7 +447,7 @@ header #logo h2 {
   border-radius: 5px;
 }
 
-/* line 218, ../../app/stylesheets/screen.sass */
+/* line 223, ../../app/stylesheets/screen.sass */
 img.aboutMeImg {
   float: left;
   margin-right: 1em;
@@ -453,7 +460,7 @@ img.aboutMeImg {
   border-radius: 5px;
 }
 
-/* line 225, ../../app/stylesheets/screen.sass */
+/* line 230, ../../app/stylesheets/screen.sass */
 .clientList li {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -466,7 +473,7 @@ img.aboutMeImg {
 .clientList li {
   *display: inline;
 }
-/* line 228, ../../app/stylesheets/screen.sass */
+/* line 233, ../../app/stylesheets/screen.sass */
 .clientList li a {
   color: white;
   display: block;
@@ -479,12 +486,12 @@ img.aboutMeImg {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 234, ../../app/stylesheets/screen.sass */
+/* line 239, ../../app/stylesheets/screen.sass */
 .clientList li a:hover, .clientList li a:active, .clientList #nav li.current a, #nav .clientList li.current a {
   background: #aaaaaa;
 }
 
-/* line 239, ../../app/stylesheets/screen.sass */
+/* line 244, ../../app/stylesheets/screen.sass */
 form input, form textarea {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -513,25 +520,25 @@ form input, form textarea {
 form input, form textarea {
   *display: inline;
 }
-/* line 250, ../../app/stylesheets/screen.sass */
+/* line 255, ../../app/stylesheets/screen.sass */
 form input {
   max-width: 300px;
 }
-/* line 252, ../../app/stylesheets/screen.sass */
+/* line 257, ../../app/stylesheets/screen.sass */
 form textarea {
   height: 200px;
 }
-/* line 254, ../../app/stylesheets/screen.sass */
+/* line 259, ../../app/stylesheets/screen.sass */
 form .humanTest {
   margin-top: 20px;
   text-align: center;
 }
-/* line 257, ../../app/stylesheets/screen.sass */
+/* line 262, ../../app/stylesheets/screen.sass */
 form .submitBtn {
   width: 90%;
   max-width: 300px;
 }
-/* line 261, ../../app/stylesheets/screen.sass */
+/* line 266, ../../app/stylesheets/screen.sass */
 form .submitBtn input {
   background: #00aeba;
   color: white;
@@ -553,41 +560,41 @@ form .submitBtn input {
   width: 95%;
   -webkit-appearance: none;
 }
-/* line 273, ../../app/stylesheets/screen.sass */
+/* line 278, ../../app/stylesheets/screen.sass */
 form .submitBtn input:hover, form .submitBtn input:active {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
-/* line 277, ../../app/stylesheets/screen.sass */
+/* line 282, ../../app/stylesheets/screen.sass */
 .contactInfo {
   float: left;
   width: 40%;
   text-align: right;
   margin: 0 5%;
 }
-/* line 282, ../../app/stylesheets/screen.sass */
+/* line 287, ../../app/stylesheets/screen.sass */
 .contactInfo a {
   color: #525252;
   text-decoration: none;
   display: block;
 }
 
-/* line 287, ../../app/stylesheets/screen.sass */
+/* line 292, ../../app/stylesheets/screen.sass */
 .mediaList {
   float: right;
   width: 40%;
   text-align: left;
   margin: 0 5%;
 }
-/* line 292, ../../app/stylesheets/screen.sass */
+/* line 297, ../../app/stylesheets/screen.sass */
 .mediaList li {
   display: inline;
   margin: 5px;
 }
-/* line 295, ../../app/stylesheets/screen.sass */
+/* line 300, ../../app/stylesheets/screen.sass */
 .mediaList li a {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -607,47 +614,47 @@ form .submitBtn input:hover, form .submitBtn input:active {
 .mediaList li a {
   *display: inline;
 }
-/* line 301, ../../app/stylesheets/screen.sass */
+/* line 306, ../../app/stylesheets/screen.sass */
 .mediaList li a.facebook:hover, .mediaList li a.facebook:active, .mediaList #nav li.current a.facebook, #nav .mediaList li.current a.facebook {
   background: #39599f;
 }
-/* line 304, ../../app/stylesheets/screen.sass */
+/* line 309, ../../app/stylesheets/screen.sass */
 .mediaList li a.twitter:hover, .mediaList li a.twitter:active, .mediaList #nav li.current a.twitter, #nav .mediaList li.current a.twitter {
   background: #45b0e3;
 }
-/* line 307, ../../app/stylesheets/screen.sass */
+/* line 312, ../../app/stylesheets/screen.sass */
 .mediaList li a.linkedin:hover, .mediaList li a.linkedin:active, .mediaList #nav li.current a.linkedin, #nav .mediaList li.current a.linkedin {
   background: #82c6da;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 312, ../../app/stylesheets/screen.sass */
+  /* line 317, ../../app/stylesheets/screen.sass */
   header .contentWrap {
     padding-bottom: 0;
   }
-  /* line 314, ../../app/stylesheets/screen.sass */
+  /* line 319, ../../app/stylesheets/screen.sass */
   header #logo {
     width: 100%;
   }
 
-  /* line 316, ../../app/stylesheets/screen.sass */
+  /* line 321, ../../app/stylesheets/screen.sass */
   #nav {
     float: left;
   }
 
-  /* line 318, ../../app/stylesheets/screen.sass */
+  /* line 323, ../../app/stylesheets/screen.sass */
   .flexWrapper, .indent {
     padding: 15px 3%;
   }
 
-  /* line 320, ../../app/stylesheets/screen.sass */
+  /* line 325, ../../app/stylesheets/screen.sass */
   .indent {
     width: 90%;
     float: none;
     margin: 0 auto 20px;
   }
 
-  /* line 324, ../../app/stylesheets/screen.sass */
+  /* line 329, ../../app/stylesheets/screen.sass */
   .sidebar {
     width: 90%;
     float: none;
@@ -655,7 +662,7 @@ form .submitBtn input:hover, form .submitBtn input:active {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 330, ../../app/stylesheets/screen.sass */
+  /* line 335, ../../app/stylesheets/screen.sass */
   .contactInfo, .mediaList {
     width: 90%;
     text-align: center;
@@ -663,13 +670,13 @@ form .submitBtn input:hover, form .submitBtn input:active {
     float: none;
   }
 
-  /* line 335, ../../app/stylesheets/screen.sass */
+  /* line 340, ../../app/stylesheets/screen.sass */
   .flexWrapper, .indent, .indent {
     padding: 10px 3%;
   }
 }
 @media only screen and (max-width : 320px) {
-  /* line 341, ../../app/stylesheets/screen.sass */
+  /* line 346, ../../app/stylesheets/screen.sass */
   header #logo h1 {
     margin-top: 0;
   }
