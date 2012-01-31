@@ -9,7 +9,7 @@ class ContactController < ApplicationController
     if @contact.save
       redirect_to "/", :notice => "Thanks! We'll be in touch."
     else
-      # flash[:error] = "Please make sure all fields are filled out correctly"
+      flash[:error] = "Please make sure all fields are filled out correctly"
       render 'new'
     end
   end
