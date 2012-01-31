@@ -42,8 +42,8 @@
         </nav>
      </div> <!-- End contentWrap -->
    </header>
-   <% flash.each do |type,messsage| %>
-     <%= content_tag :div, messsage, :class => [type, "flash"] %>
+   <% flash.each do |type, message| %>
+     <%= content_tag :div, message, :class => [type, "flash"] %>
    <% end %>
    
 <%= yield %>
