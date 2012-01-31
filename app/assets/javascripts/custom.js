@@ -1,15 +1,17 @@
 $().ready(function() {
-setResponsiveStyles();
-$(window).resize(function(){
-setResponsiveStyles();
+  setResponsiveStyles();
+  
+  $(window).resize(function(){
+    setResponsiveStyles();
+  });
 });
-});
+
 function setResponsiveStyles() {
-setFeaturedWorkHeight();
+  setFeaturedWorkHeight();
 }
 
 function setFeaturedWorkHeight(){
-$('.featuredWork li').css("height", ($('.featuredWork li').width()) + "px" );
+  $('.featuredWork li').css("height", $('.featuredWork li').width() + "px" );
 }
 
 
