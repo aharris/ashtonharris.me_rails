@@ -10,8 +10,6 @@ function setResponsiveStyles() {
   setFeaturedWorkHeight();
 }
 
-function setFeaturedWorkHeight(){
+function setFeaturedWorkHeight() {
   $('.featuredWork li').css("height", $('.featuredWork li').width() + "px" );
 }
-
-
