@@ -4,6 +4,7 @@ gem 'rails', '3.1.1'
 gem 'json'
 gem "compass", ">= 0.11.7"
 gem 'jquery-rails'
+gem 'thin'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.4'
@@ -16,5 +17,6 @@ group :production do
 end
 
 group :development do
+  gem 'foreman'
   gem 'sqlite3', '1.3.4'
 end
