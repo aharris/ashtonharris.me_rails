@@ -281,11 +281,24 @@ form
   line-height: 1.2em
 
 //ERRORS
+.flashWrap
+  width: 90%
+  margin: 0 auto
+  max-width: 1000px
 .flash
-  text-align: center
+  text-align: left
   color: #fff
   padding: 10px
   margin-top: -20px
+  a
+    float: right
+    color: #404040
+    +opacity(.3)
+    font-weight: bold
+    font-size: 20px
+    margin-top: -4px
+    &:hover, &:active
+      +opacity(.7)
 
 .error
   +background-image(linear-gradient(#ee5f5b, #c43c35))

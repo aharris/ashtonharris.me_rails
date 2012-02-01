@@ -1,7 +1,7 @@
 $().ready(function() {
-  $('.flash').append('<a href="#" class="closeFlash">x</a>');
+  $('.flashWrap').append('<a href="#" class="closeFlash">x</a>');
   $('.closeFlash').click(function(event) {
-    $(this).parent().hide();
+    $('.flash').hide();
     event.preventDefault();
   });
 });
