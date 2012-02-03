@@ -27,9 +27,7 @@
     <div class="comments">//</div><h3>Featured Work</h3>
     <ul class="featuredWork">
       <li>
-        <a class="featured_1" href="#">
-          Movitas
-        </a>
+          <%= link_to "Movitas", work_path(:movitas), :class => "featured_1" %>
       </li>
       <li>
         <a class="featured_2" href="#">
@@ -37,9 +35,8 @@
         </a>
       </li>
       <li>
-        <a class="featured_3" href="#">
+        <%= link_to "Avaya", work_path(:avaya), :class => "featured_3" %>
           Avaya
-        </a>
       </li>
       <li>
         <a class="featured_4" href="#">

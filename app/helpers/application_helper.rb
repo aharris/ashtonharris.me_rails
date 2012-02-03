@@ -1,10 +1,10 @@
 module ApplicationHelper
   
-  def link_to_with_current_class(name, options)
-    if current_page?(options)
-      content_tag :li, link_to(h(name), options, :class => name), :class => "current"
+  def link_to_with_current_class(name, path)
+    if path == request.path or (path == "/" and request.path.include? "/work/")
+      content_tag :li, link_to(name, path, :class => name), :class => "current"
     else
-      content_tag :li, link_to(h(name), options, :class => name)
+      content_tag :li, link_to(name, path, :class => name)
     end   
   end
   
