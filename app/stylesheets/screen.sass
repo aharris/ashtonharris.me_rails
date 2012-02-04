@@ -16,7 +16,7 @@ body
   color: #141720
   background: #f5f7f6
 
-h1, h2, h3
+h1, h2, h3, h4
   font-family: $headerFont
 
 h3
@@ -30,6 +30,12 @@ h3
   color: #84878b
   +inline-block
   margin-bottom: 20px
+
+h4
+  color: #141720
+  font-weight: 400
+  font-size: 1.1em
+  margin-bottom: 1em
 
 p
   line-height: 1.5em
@@ -196,7 +202,11 @@ header
         background: #141720 url('../../images/featured/media_giraffes_logo.png') no-repeat scroll 50% 50%
         &:active, &:hover
           background: #141720 url('../../images/featured/media_giraffes_img.png') no-repeat scroll 50% 50%
-      
+
+//WORK
+.badges
+  text-align: center
+  
 //RESUME
 .indent
   @extend .flexWrapper
@@ -214,10 +224,11 @@ header
   float: left
   width: 30%
 
-.resume
+.resume, .work
   img
     +box-shadow( 0 0 0 4px white )
     +border-radius(5px)
+    margin-bottom: 1em
 
 img.aboutMeImg
   float: left
