@@ -1,96 +1,93 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Ashton Harris</title>
-  <%= stylesheet_link_tag 'screen.css', :media => 'screen, projection' %>
-   <%= stylesheet_link_tag 'print.css', :media => 'print' %>
-   <!--[if IE]><%= stylesheet_link_tag 'ie.css', :media => 'screen, projection' %><![endif]-->
-   <%= stylesheet_link_tag 'flexslider.css' %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
-  <!-- For iPhone 4 with high-resolution Retina display: -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon@2x.png">
-  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
-  <script type="text/javascript" charset="utf-8">
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-            animation: "slide",
-            controlsContainer: ".flex-container"
-      });
-    });
-  </script>
-  <script type="text/javascript">
+  <html>
+    <head>
+      <title>Ashton Harris</title>
+      <%= stylesheet_link_tag 'screen.css', :media => 'screen, projection' %>
+      <%= stylesheet_link_tag 'print.css', :media => 'print' %>
+      <!--[if IE]><%= stylesheet_link_tag 'ie.css', :media => 'screen, projection' %><![endif]-->
+      <%= stylesheet_link_tag 'flexslider.css' %>
+      <%= javascript_include_tag "application" %>
+      <%= csrf_meta_tags %>
+      <meta name="viewport" content="width=device-width">
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+      <!-- For iPhone 4 with high-resolution Retina display: -->
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon@2x.png">
+      <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+      <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+      <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+                animation: "slide",
+                controlsContainer: ".flex-container"
+          });
+        });
+    
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-29024067-1']);
+        _gaq.push(['_trackPageview']);
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-29024067-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-</head>
-<body>
-  <header>
-     <div class="contentWrap">
-       <div id="logo">
-         <a href="/">
-           <img src="/images/logo_icon.png" width="88" height="88" alt="Logo Icon">
-           <h1>ashton<span class="darker">harris</span></h1>
-           <h2>Web Designer/Front-end Developer</h2>
-         </a>
-       </div> <!-- End logo -->
-       <nav>
-        <ul id="nav">
-          <%= link_to_with_current_class "work", all_work_path %>
-          <%= link_to_with_current_class "about", about_path %>
-          <%= link_to_with_current_class "contact", contact_path %>
-        </ul> 
-        </nav>
-     </div> <!-- End contentWrap -->
-   </header>
-    <% flash.each do |type, message| 
-      wrapper = content_tag :div, message, :class => "flashWrap"
-      %>
-     <%= content_tag :div, raw(wrapper), :class => [type, "flash"] %>
-    <% end %>
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    </head>
+    <body>
+      <header>
+        <div class="contentWrap">
+          <div id="logo">
+            <a href="/">
+              <img src="/images/logo_icon.png" width="88" height="88" alt="Logo Icon">
+              <h1>ashton<span class="darker">harris</span></h1>
+              <h2>Web Designer/Front-end Developer</h2>
+            </a>
+          </div> <!-- End logo -->
+          <nav>
+            <ul id="nav">
+              <%= link_to_with_current_class "work", all_work_path %>
+              <%= link_to_with_current_class "about", about_path %>
+              <%= link_to_with_current_class "contact", contact_path %>
+            </ul> 
+          </nav>
+        </div> <!-- End contentWrap -->
+      </header>
+        <% flash.each do |type, message| 
+          wrapper = content_tag :div, message, :class => "flashWrap"
+        %>
+        <%= content_tag :div, raw(wrapper), :class => [type, "flash"] %>
+        <% end %>
    
-<%= yield %>
+      <%= yield %>
 
-<footer>
-  <div class="contentWrap">
-    <hr/>
-    <hr/>
-    <div class="socialMedia">
-      <ul class="mediaList">
-        <li>
-          <a class="facebook" href="http://www.facebook.com/ahdesigns" target="_blank">
-            <img src="/images/fb_icon.png" width="20" height="20" alt="Fb Icon">
-          </a>
-        </li>
-        <li>
-          <a class="twitter" href="https://twitter.com/AHDezigns" target="_blank">
-            <img src="/images/twitter_icon.png" width="20" height="20" alt="Twitter Icon">
-          </a>
-        </li>
-        <li>
-          <a class="linkedin" href="http://www.linkedin.com/in/ashtonharris" target="_blank">
-            <img src="/images/linkedin_icon.png" width="20" height="20" alt="Linkedin Icon">
-          </a>
-        </li>
-      </ul>
-    </div> <!-- End socialMedia -->
-    <div class="contactInfo">
-      <a href="mailto:ashtonharris.me@gmail.com">ashtonharris.me@gmail.com</a><br/>
-      <a href="tel:6103348786">610 334 8786</a>
-    </div><!-- End contactInfo -->
-  </div><!-- End contentWrap -->  
-</footer>
-</body>
-</html>
+      <footer>
+        <div class="contentWrap">
+          <hr/>
+          <hr/>
+          <div class="socialMedia">
+            <ul class="mediaList">
+              <li>
+                <a class="facebook" href="http://www.facebook.com/ahdesigns" target="_blank">
+                  <img src="/images/fb_icon.png" width="20" height="20" alt="Fb Icon">
+                </a>
+              </li>
+              <li>
+                <a class="twitter" href="https://twitter.com/AHDezigns" target="_blank">
+                  <img src="/images/twitter_icon.png" width="20" height="20" alt="Twitter Icon">
+                </a>
+              </li>
+              <li>
+                <a class="linkedin" href="http://www.linkedin.com/in/ashtonharris" target="_blank">
+                  <img src="/images/linkedin_icon.png" width="20" height="20" alt="Linkedin Icon">
+                </a>
+              </li>
+            </ul>
+          </div> <!-- End socialMedia -->
+          <div class="contactInfo">
+            <a href="mailto:ashtonharris.me@gmail.com">ashtonharris.me@gmail.com</a><br/>
+            <a href="tel:6103348786">610 334 8786</a>
+          </div><!-- End contactInfo -->
+        </div><!-- End contentWrap -->  
+      </footer>
+    </body>
+  </html>
