@@ -6,6 +6,7 @@ gem "compass", ">= 0.11.7"
 gem 'jquery-rails'
 gem 'thin'
 gem 'heroku'
+gem 'newrelic_rpm'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.4'
