@@ -320,14 +320,16 @@ form
 
 //ERRORS
 .flashWrap
-  width: 90%
+  width: 80%
   margin: 0 auto
   max-width: 1000px
+  padding-right: 10%
 .flash
   text-align: left
   color: #fff
   padding: 10px
-  margin-top: -20px
+  @media all and (min-width: 480px)
+    margin-top: -20px
   a
     float: right
     color: #404040
@@ -335,6 +337,7 @@ form
     font-weight: bold
     font-size: 20px
     margin-top: -4px
+    margin-right: -10%
     &:hover, &:active
       +opacity(.7)
 
