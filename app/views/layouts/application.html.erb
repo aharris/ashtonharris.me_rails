@@ -8,7 +8,7 @@
       <%= javascript_include_tag "application" %>
       <%= csrf_meta_tags %>
       <meta name="viewport" content="width=device-width, target-densityDpi=device-dpi, initial-scale=1.0">
-      
+
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       <!-- For iPhone 4 with high-resolution Retina display: -->
       <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon@2x.png">
@@ -32,7 +32,7 @@
                 controlsContainer: ".flex-container"
           });
         });
-    
+
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-29024067-1']);
         _gaq.push(['_trackPageview']);
@@ -59,16 +59,16 @@
               <%= link_to_with_current_class "work", all_work_path %>
               <%= link_to_with_current_class "about", about_path %>
               <%= link_to_with_current_class "contact", contact_path %>
-            </ul> 
+            </ul>
           </nav>
         </div> <!-- End contentWrap -->
       </header>
-        <% flash.each do |type, message| 
+        <% flash.each do |type, message|
           wrapper = content_tag :div, message, :class => "flashWrap"
         %>
         <%= content_tag :div, raw(wrapper), :class => [type, "flash"] %>
         <% end %>
-   
+
       <%= yield %>
 
       <footer>
@@ -83,7 +83,7 @@
                 </a>
               </li>
               <li>
-                <a class="twitter" href="https://twitter.com/AHDezigns" target="_blank">
+                <a class="twitter" href="https://twitter.com/busypixels" target="_blank">
                   <img src="/images/twitter_icon.png" width="20" height="20" alt="Twitter Icon">
                 </a>
               </li>
@@ -103,7 +103,7 @@
             <a href="mailto:ashtonharris.me@gmail.com">ashtonharris.me@gmail.com</a><br/>
             <a href="tel:6103348786">610 334 8786</a>
           </div><!-- End contactInfo -->
-        </div><!-- End contentWrap -->  
+        </div><!-- End contentWrap -->
       </footer>
     </body>
   </html>
