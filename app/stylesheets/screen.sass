@@ -41,7 +41,7 @@ h5
 p
   line-height: 1.5em
   margin-bottom: 1em
-    
+
 strong
   font-weight:  bold
 
@@ -100,7 +100,7 @@ a
 //HEADER
 header
   background: #141720
-  #logo
+  .logo
     float: left
     width: 50%
     img
@@ -122,7 +122,7 @@ header
       text-transform: uppercase
 
 //NAVIGATION
-#nav
+.nav
   float: right
   li
     +inline-block
@@ -135,7 +135,7 @@ header
       padding-top: 15px
       &:active, &:hover
         color: #30b51f
-    &.current 
+    &.current
       a
         @extend a:active
         &.work
@@ -151,11 +151,11 @@ header
           width: 22px
           height: 20px
 
-#nav li.current a.work
+.nav li.current a.work
   background: url('../../images/work_icon.png') no-repeat scroll 50% 0%
   width: 22px
   height: 20px
-  
+
 //FLEX SLIDER
 .flexWrapper
   background: #fff
@@ -176,7 +176,6 @@ header
   text-align: center
   li
     +inline-block
-    //border: 8px solid #141720
     width: 22%
     margin: 1%
     min-width: 130px
@@ -229,7 +228,7 @@ header
     &.blank
       +box-shadow(none)
       background: none
-      
+
 //RESUME
 .indent
   @extend .flexWrapper
@@ -361,7 +360,7 @@ form
     color: #525252
     text-decoration: none
     display: block
-    
+
 .mediaList
   float: right
   width: 40%
@@ -393,12 +392,12 @@ form
   header
     .contentWrap
       padding-bottom: 0
-    #logo
+    .logo
       width: 100%
-  #nav
-    float: left  
+  .nav
+    float: left
   .flexWrapper
-    padding: 15px 3%  
+    padding: 15px 3%
   .indent
     width: 90%
     float: none
@@ -411,7 +410,7 @@ form
     li
       width: 40%
       padding: 10px 3%
-    
+
 @media only screen and (max-width: 480px)
   .contentWrap
     margin-bottom: 0
@@ -425,7 +424,6 @@ form
 
 @media only screen and (max-width : 320px)
   header
-    #logo
+    .logo
       h1
         margin-top: 0
-  
