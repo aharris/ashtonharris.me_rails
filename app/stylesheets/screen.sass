@@ -136,6 +136,7 @@ header
       color: #fff
       text-decoration: none
       padding-top: 15px
+      +transition(color 500ms)
       &:active, &:hover
         color: #30b51f
     &.current
@@ -188,6 +189,7 @@ header
       height: 100%
       text-indent: -1000000px
       background-size: 90% auto !important
+      +transition(background 500ms)
       +border-radius(10px)
       &.featured_1
         background: #141720 url('../../images/featured/movitas_logo.png') no-repeat scroll 50% 50%
@@ -377,6 +379,7 @@ form
       background: #9b9da0
       +border-radius(40px)
       padding: 10px
+      +transition(background 500ms)
       &.dribbble
         &:hover, &:active
           background: #ea4c89
